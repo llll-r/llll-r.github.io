@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo"></a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">时间记录</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-flex" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/04/flex/" class="article-date">
+  <time class="dt-published" datetime="2021-11-04T12:14:09.000Z" itemprop="datePublished">2021-11-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/04/flex/">flex用法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+         <!-- 文章目录 -->
+    
+        <p>Flex 是 Flexible Box 的缩写，意为”弹性布局”; 任何一个元素都可以指定为Flex布局，行内元素也可以使用Flex布局。<br>设为 Flex 布局以后，子元素的<code>float</code>、<code>clear</code>和<code>vertical-align</code>属性将失效。容器属性总共有6个： </p>
+<ol>
+<li>flex-direction   </li>
+<li>flex-wrap   </li>
+<li>flex-flow  </li>
+<li>justify-content  </li>
+<li>align-items </li>
+<li>align-content</li>
+</ol>
+<ol>
+<li><strong>flex-direction 有4个取值：决定项目的排列方向</strong></li>
+</ol>
+<ul>
+<li><code>row</code>（默认值）：主轴为水平方向，起点在左端。</li>
+<li><code>row-reverse</code>：主轴为水平方向，起点在右端。</li>
+<li><code>column</code>：主轴为垂直方向，起点在上沿。</li>
+<li><code>column-reverse</code>：主轴为垂直方向，起点在下沿</li>
+</ul>
+<ol start="2">
+<li><strong>flex-wrap:默认情况下，项目都排在一条线上。此属性定义，如果一条轴线排不下，如何换行</strong></li>
+</ol>
+<ul>
+<li>flex-wrap: nowrap | wrap | wrap-reverse;<br>(默认)不换行  | 换行，第一行在上方  |  换行，第一行在下方</li>
+</ul>
+<ol start="3">
+<li><p><strong>flex-flow:此属性是flex-direction 和flex-wrap 的简写形式 ，默认值为 row nowrap</strong></p>
+</li>
+<li><p><strong>justify-content :定义了项目在主轴上的对齐方式</strong></p>
+<ul>
+<li><code>flex-start</code>（默认值）：左对齐</li>
+<li><code>flex-end</code>：右对齐</li>
+<li><code>center</code>： 居中</li>
+<li><code>space-between</code>：两端对齐，项目之间的间隔都相等。</li>
+<li><code>space-around</code>：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</li>
+</ul>
+</li>
+<li><p><strong>align-items :定义项目在交叉轴上如何对齐</strong></p>
+<ul>
+<li><code>flex-start</code>：交叉轴的起点对齐。</li>
+<li><code>flex-end</code>：交叉轴的终点对齐。</li>
+<li><code>center</code>：交叉轴的中点对齐。</li>
+<li><code>baseline</code>: 项目的第一行文字的基线对齐。</li>
+<li><code>stretch</code>（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度</li>
+</ul>
+</li>
+<li><p><strong>align-content：定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用</strong></p>
+</li>
+</ol>
+<ul>
+<li><code>flex-start</code>：与交叉轴的起点对齐。</li>
+<li><code>flex-end</code>：与交叉轴的终点对齐。</li>
+<li><code>center</code>：与交叉轴的中点对齐。</li>
+<li><code>space-between</code>：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+<li><code>space-around</code>：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+<li><code>stretch</code>（默认值）：轴线占满整个交叉轴。</li>
+</ul>
+<p>添加在项目上的属性：</p>
+<ol>
+<li>order </li>
+<li>flex-grow  </li>
+<li>flex-shrink   </li>
+<li>flex-basis  </li>
+<li>flex  </li>
+<li>align-self</li>
+</ol>
+<ol>
+<li><strong>order</strong> 定义项目的排列顺序。数值越小，排列越靠前，默认是0。</li>
+<li><strong>flex-grow</strong> 定义项目的放大比例，默认为0。如果所有项目的<code>flex-grow</code>属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的<code>flex-grow</code>属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</li>
+<li><strong>flex-shrink</strong> 定义了项目的缩小比例，默认为1。如果所有项目的<code>flex-shrink</code>属性都为1，当空间不足时，都将等比例缩小。如果一个项目的<code>flex-shrink</code>属性为0，其他项目都为1，则空间不足时，前者不缩小。</li>
+<li><strong>flex-basis</strong> 定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为<code>auto</code>，即项目的本来大小。</li>
+<li><strong>flex</strong>  此属性是<code>flex-grow</code>, <code>flex-shrink</code> 和 <code>flex-basis</code>的简写，默认值为<code>0 1 auto</code>。后两个属性可选。</li>
+<li><strong>align-self</strong>   <code>align-self</code>属性允许单个项目有与其他项目不一样的对齐方式，可覆盖<code>align-items</code>属性。默认值为<code>auto</code>，表示继承父元素的<code>align-items</code>属性，如果没有父元素，则等同于<code>stretch</code>。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/04/flex/" data-id="ckvkx0cz30000x8w12ume51xx" data-title="flex用法" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-interview" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/04/interview/" class="article-date">
+  <time class="dt-published" datetime="2021-11-04T11:38:39.000Z" itemprop="datePublished">2021-11-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/04/interview/">面试记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+         <!-- 文章目录 -->
+    
+        <h4 id="美团一面"><a href="#美团一面" class="headerlink" title="美团一面"></a>美团一面</h4><ol>
+<li>项目难点（我说了侧边栏、头部全局注册， 再单独注入）</li>
+<li>侧边栏权限问题</li>
+<li>为什么要设成每次登录都要输入用户名和密码</li>
+<li>如何设置保存用户不需要登录（cookie、localStorage）</li>
+<li>使用cookie隐患、localStorage不安全的地方</li>
+<li>vue怎么实现的双向绑定</li>
+<li>实现个proxy拦截</li>
+<li>jquery链式调用如何做到的</li>
+<li>bootstrap怎么实现自适应</li>
+<li>知不知道别的自适应了</li>
+<li>使用了echarts和highCharts， 他们实现原理的区别？</li>
+<li>es6继承改写为es5继承 （写出来以后要改写成只能使用new的方式）</li>
+<li>promise、generator、async的联系</li>
+<li>promise和generator的联系，js引擎如何编译generator</li>
+<li>fetch实现超时报错</li>
+<li>webpack原理</li>
+<li>webpack实现压缩代码体积，如何实现的</li>
+</ol>
+<h4 id="滴滴实习一面"><a href="#滴滴实习一面" class="headerlink" title="滴滴实习一面"></a>滴滴实习一面</h4><ol>
+<li>自我介绍</li>
+<li>比赛是什么形式的</li>
+<li>说说你对vue的理解</li>
+<li>学习vue是怎么学的</li>
+<li>解释下如何实现双向绑定</li>
+<li>diff比较的过程</li>
+<li>vue3 与vue2的区别</li>
+<li>说说对原型链的理解</li>
+<li>js写个继承</li>
+<li>Object.create()的作用</li>
+<li>new的过程中发生了什么</li>
+<li>js的作用域</li>
+<li>什么是块级作用域</li>
+<li>flex布局</li>
+<li>说一下项目负责的内容</li>
+<li>打开代码解释下实现了什么比较复杂的功能</li>
+<li>职业规划问题</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/04/interview/" data-id="ckvkwzijd0000dcw1ghrkfb3p" data-title="面试记录" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/04/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-11-04T10:43:31.164Z" itemprop="datePublished">2021-11-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/04/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+         <!-- 文章目录 -->
+    
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/04/hello-world/" data-id="ckvkwywa70001zkw1ffbp8sgj" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag">面试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 10px;">面试</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/11/04/flex/">flex用法</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/04/interview/">面试记录</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">时间记录</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
